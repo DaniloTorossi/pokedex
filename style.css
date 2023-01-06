@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+/* Fondo dinamico en gradiente */
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #2bbfe4 50%, #eaecc6 50%, #34e69f);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 320px;
+    box-shadow: 0px 1px 10px rgba(0, 0 ,0 , 0.315);
+   
+}
+
+
+.card-header {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 320px;
+    box-shadow: 0px 1px 10px rgba(0, 0 ,0 , 0.315);
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    background-color: white;
+    overflow: hidden;
+    max-width: 320px;
+    box-shadow: 0px 1px 10px rgba(0, 0 ,0 , 0.315);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(78, 78, 78) ;
+    border-top: 1px solid rgb(78, 78, 78) ;
+
+}
+.card-body-img {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 320px;
+    box-shadow: 0px 1px 10px rgba(0, 0 ,0 , 0.315);
+    border: 5px solid white;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: calc(-48px - 5px);
+
+}
+
+.card-body-title {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 320px;
+    box-shadow: 0px 1px 10px rgba(0, 0 ,0 , 0.315);
+    margin: 0;
+    margin-top: 2rem;
+    color: rgb(78, 78, 78);
+    font-size: 1.8rem;
+    font-family: 'Martian Mono', monospace;
+    text-align: center;
+}
+span {
+    color: rgb(78, 78, 78);
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
+}
+.card-body-text {
+    color: rgb(78, 78, 78);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-family: 'Martian Mono', monospace;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Martian Mono', monospace;
+}
+
+.card-footer-social {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Martian Mono', monospace;
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: rgb(78, 78, 78);
+    font-family: 'Martian Mono', monospace;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    color: rgb(78, 78, 78);
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Martian Mono', monospace;
+  }
+
+  .buscador {
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0 ,0 , 0.315);
+    background-color: white;
+  }
+
+  form {
+    width: 200px;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+    
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+}
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+}

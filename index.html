@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;800&family=Noto+Nastaliq+Urdu&family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>POKEDEX</title>
+
+    <script src="app.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Background dinamico-->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <section class="flex">
+      <div id="card">
+        <form action="" onsubmit="searchPokemon(event)">
+          <input
+            type="text"
+            name="pokemon"
+            placeholder="buscador de pokemon"
+            class="buscador"
+            autocomplete="off"
+          />
+        </form>
+        <div data-poke-card class="card">
+          <h2 class="card-body-title" data-poke-name></h2>
+          <div class="card-body" data-poke-img-container>
+            <img
+              src="pokeshadow.svg"
+              alt=""
+              width="150px"
+              height="150px"
+              class="poke-img"
+              data-poke-img
+            />
+          </div>
+          <h2 class="card-body-title" data-poke-id></h2>
+
+          <div class="card-footer">
+            <div class="card-footer-social">
+              <div data-poke-types class="card-body-text poke-types"></div>
+            </div>
+            <div class="card-footer-social">
+              <div data-poke-stats class="card-body-text poke-stats"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
